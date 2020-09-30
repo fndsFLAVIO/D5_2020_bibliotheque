@@ -25,19 +25,28 @@ h1 {
   font-style: normal;
 }
 
-h2 {font-family: freight-big-pro, serif;
+h3{font-family: neue-haas-grotesk-text, sans-serif;
 font-weight: 400;
-font-style: italic;}
+font-style: normal;
+font-size: 5em;
 
-h3 {font-family: aktiv-grotesk-extended, sans-serif;
+}
+
+h4 {font-family: freight-big-pro, serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2em;
+}
+
+h5 {font-family: aktiv-grotesk-extended, sans-serif;
 font-weight: 400;
 font-style: normal;}
 
-h4 {font-family: aktiv-grotesk-extended, sans-serif;
+h6 {font-family: aktiv-grotesk-extended, sans-serif;
 font-weight: 800;
 font-style: normal;}
 
-h5 {font-size: 1.5em;}
+h7 {font-size: 1.5em;}
 
 small, .text_small {font-size: 0.667em;}
 
@@ -45,4 +54,26 @@ small, .text_small {font-size: 0.667em;}
   font-family: freight-big-pro, serif;
   font-weight: 400;
   font-style: italic;
+}
+.pourquoi{font-family: aktiv-grotesk-extended, sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.futur{
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.chapitre{
+  font-family: freight-big-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2em;
+}
+.numero{font-family: neue-haas-grotesk-text, sans-serif;
+font-weight: 700;
+font-style: italic;
+font-size: 0.5em;
+
 }
