@@ -15,7 +15,6 @@ body {
 
 #header {
   min-width: 100%;
-  ;
 }
 
 figure #header {
@@ -75,6 +74,7 @@ figure #fleche {
   margin-left: 10vh;
   margin-right: 25vh;
   margin-top: 15vh;
+
 }
 
 .soustitre {
@@ -100,6 +100,17 @@ padding-right: 10%;
 background-size:contain;
 
 }
+.darkmode--activated .debutchapitre {
+background:  url('images/nuage.png') right 50% no-repeat;
+min-height: 612px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-right: 10%;
+background-size:contain;
+  mix-blend-mode: difference;
+}
+
 p{
   margin-bottom: 8pt;
 }
@@ -159,3 +170,45 @@ a{
   color: rgb(255, 182, 181);
   text-decoration: none;
 }
+
+.merci{
+  color: white;
+  text-align: center;
+  font-size: 5em;
+}
+footer .majuscule{
+  font-size: 1.3em;
+}
+footer{
+  background:  url('images/nuage.png') center 50% no-repeat;
+  min-height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+margin-right: auto;
+margin-left: auto;
+  background-size:contain;
+}
+footer h6{
+  color: white
+}
+footer a {
+  color: white;
+}
+const options = {
+  bottom: '64px',
+  right: 'unset',
+  left: '32px',
+  time: '0.5s',
+  label: '🌗',
+  mixColor: '#fff',
+  backgroundColor: '#fff',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: false,
+
+  autoMatchOsTheme: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
