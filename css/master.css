@@ -1,3 +1,214 @@
-body{
-  background:red;
+body {
+  background: #F8F8F8;
 }
+
+#banniere {
+  color: white;
+  font-size: 7em;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0.8em;
+}
+
+#header {
+  min-width: 100%;
+}
+
+figure #header {
+  width: auto;
+  height: 100vh;
+}
+
+#ampoule {
+  position: absolute;
+  top: 8%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+figure #ampoule {
+  width: 5%;
+}
+
+#fleche {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+figure #fleche {
+  width: 10%;
+}
+
+.langue {
+  display: flex;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0.8em;
+}
+
+#FR {
+  margin-right: 20px;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#EN {
+  margin-left: 20px;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu {
+  margin-left: 10vh;
+  margin-right: 25vh;
+  margin-top: 15vh;
+
+}
+
+.soustitre {
+  max-width: 620px;
+  margin-left: 2em;
+}
+
+figure #nuage {
+  margin-left: 70vh;
+
+}
+.nuagechapitre{
+  position: absolute;
+  z-index: 1;
+}
+.debutchapitre {
+background:  url('images/nuage.png') right 50% no-repeat;
+min-height: 612px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-right: 10%;
+background-size:contain;
+
+}
+.darkmode--activated .debutchapitre {
+background:  url('images/nuage.png') right 50% no-repeat;
+min-height: 612px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-right: 10%;
+background-size:contain;
+  mix-blend-mode: difference;
+}
+
+p{
+  margin-bottom: 8pt;
+}
+.feràgauche h6{
+max-width: 70%;
+margin-left: 2em;
+margin-bottom: 10pt;
+
+}
+
+.feràgauche p {
+  max-width: 50%;
+  margin-left: 2em;
+}
+
+.centré h6{
+max-width: 70%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10pt;
+text-align: center;
+
+}
+
+.centré p {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.feràdroite h6{
+max-width: 100%;
+margin-right: 2em;
+margin-bottom: 10pt;
+text-align:right;
+padding-left: 30%;
+
+}
+
+.feràdroite p {
+  max-width: 100%;
+  margin-right: 2em;
+  text-align: right;
+  padding-left: 50%;
+}
+
+.feràgauche{
+  margin-bottom: 10%;
+}
+.centré{
+  margin-bottom: 10%;
+}
+.feràdroite{
+  margin-bottom: 10%;
+}
+a{
+  color: rgb(255, 182, 181);
+  text-decoration: none;
+}
+
+.merci{
+  color: white;
+  text-align: center;
+  font-size: 5em;
+}
+footer .majuscule{
+  font-size: 1.3em;
+}
+footer{
+  background:  url('images/nuage.png') center 50% no-repeat;
+  min-height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+margin-right: auto;
+margin-left: auto;
+  background-size:contain;
+}
+footer h6{
+  color: white
+}
+footer a {
+  color: white;
+}
+const options = {
+  bottom: '64px',
+  right: 'unset',
+  left: '32px',
+  time: '0.5s',
+  label: '🌗',
+  mixColor: '#fff',
+  backgroundColor: '#fff',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: false,
+
+  autoMatchOsTheme: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
